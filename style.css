@@ -116,6 +116,8 @@ section h2 {
 
 /* HERO – mobile first (uses hero-mobile.jpg) */
 
+/* HERO – mobile first (uses hero-mobile.jpg) */
+
 .hero {
   position: relative;
   color: #111827;
@@ -136,7 +138,7 @@ section h2 {
   pointer-events: none;
 }
 
-/* keep text/buttons above overlay */
+/* keep text & buttons above fade */
 .hero > * {
   position: relative;
 }
@@ -159,7 +161,6 @@ section h2 {
 }
 
 /* DESKTOP / WIDER SCREENS – use wide hero.jpg */
-
 @media (min-width: 769px) {
   .hero {
     background: url("images/hero.jpg") center/cover no-repeat;
@@ -170,6 +171,26 @@ section h2 {
     font-size: 2rem;
   }
 }
+
+/* MOBILE TWEAKS */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2.2rem 1.4rem 2.4rem;
+    border-radius: 0.75rem;
+    background-position: center top; /* nicer crop */
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
 
 /* BUTTONS */
 
