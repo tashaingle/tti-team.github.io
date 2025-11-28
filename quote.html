@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get a Quote – TTI Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Request a quote from TTI Management for B&B management, cleaning, bookings and maintenance.">
+</head>
+
+<body>
+  <header>
+    <h1>Get a Quote</h1>
+    <p>Tell us a bit about your property and we’ll be in touch</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About TTI</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="quote.html">Get a Quote</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>About Your Property</h2>
+      <p>
+        Fill in the form below and we’ll use these details to put together a simple quote 
+        for managing your B&amp;B. We’ll get back to you by email as soon as we can.
+      </p>
+    </section>
+
+    <section>
+      <h2>Quote Request Form</h2>
+      <form action="https://formsubmit.co/info@ttimanagement.co.uk" method="POST">
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_subject" value="New quote request from TTI website">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone number (optional)</label><br>
+          <input type="text" id="phone" name="phone">
+        </div>
+
+        <div>
+          <label for="location">Property location (town / area)</label><br>
+          <input type="text" id="location" name="property_location" required>
+        </div>
+
+        <div>
+          <label for="size">Property size</label><br>
+          <input type="text" id="size" name="property_size" placeholder="e.g. 3-bedroom house, 2 guest rooms">
+        </div>
+
+        <div>
+          <label for="bookings">Rough number of guest stays per month (if known)</label><br>
+          <input type="text" id="bookings" name="estimated_bookings" placeholder="e.g. 4–8 stays per month">
+        </div>
+
+        <div>
+          <label>Services you’re interested in</label><br>
+          <label><input type="checkbox" name="services[]" value="Full management"> Full B&amp;B management</label><br>
+          <label><input type="checkbox" name="services[]" value="Cleaning and laundry"> Cleaning &amp; laundry</label><br>
+          <label><input type="checkbox" name="services[]" value="Maintenance"> Maintenance &amp; repairs</label><br>
+          <label><input type="checkbox" name="services[]" value="Guest communication"> Guest communication &amp; bookings</label><br>
+        </div>
+
+        <div>
+          <label for="message">Anything else we should know?</label><br>
+          <textarea id="message" name="message" placeholder="Tell us about your B&amp;B, how you currently manage it, and what support you’re looking for."></textarea>
+        </div>
+
+        <input type="submit" value="Request Quote" class="btn btn-primary">
+      </form>
+    </section>
+
+    <section>
+      <h2>What Happens Next?</h2>
+      <p>
+        Once we receive your quote request, we’ll review the details and get back to you by email. 
+        If we need more information, we may suggest a quick call to learn more about your property.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <strong>TTI Management</strong><br>
+          Cleaning • Bookings • Maintenance for B&amp;Bs
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="quote.html">Get a Quote</a>
+        </div>
+      </div>
+      <p>&copy; <span id="year"></span> TTI Management</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
