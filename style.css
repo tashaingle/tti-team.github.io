@@ -114,7 +114,8 @@ section h2 {
   font-size: 1.35rem;
 }
 
-/* HERO – shared base (mobile first) */
+/* HERO – mobile first (uses hero-mobile.jpg) */
+
 .hero {
   position: relative;
   color: #111827;
@@ -122,8 +123,6 @@ section h2 {
   border-radius: 1rem;
   overflow: hidden;
   text-align: left;
-
-  /* mobile image by default */
   background: url("images/hero-mobile.jpg") center/cover no-repeat;
 }
 
@@ -159,7 +158,8 @@ section h2 {
   gap: 0.9rem;
 }
 
-/* DESKTOP / WIDER SCREENS – use wide hero image */
+/* DESKTOP / WIDER SCREENS – use wide hero.jpg */
+
 @media (min-width: 769px) {
   .hero {
     background: url("images/hero.jpg") center/cover no-repeat;
@@ -170,82 +170,6 @@ section h2 {
     font-size: 2rem;
   }
 }
-
-/* MOBILE TWEAKS ONLY */
-@media (max-width: 768px) {
-  .hero {
-    padding: 2.2rem 1.4rem 2.4rem;
-    border-radius: 0.75rem;
-    background-position: center top; /* nicer crop */
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-}
-
-
-
-
-/* DESKTOP VERSION (wide screens) — uses hero.jpg as a background */
-@media (min-width: 769px) {
-
-  .hero {
-    background: url("images/hero.jpg") center/cover no-repeat;
-    padding: 3rem 2rem 3.5rem;
-  }
-
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.65); /* soft overlay */
-    border-radius: inherit;
-  }
-
-  .hero > * {
-    position: relative; /* keep text above overlay */
-  }
-
-  .hero-image {
-    display: none; /* desktop NEVER shows inline image */
-  }
-}
-
-/* MOBILE VERSION — uses hero-mobile.jpg for better cropping */
-@media (max-width: 768px) {
-
-  .hero {
-    background: url("images/hero-mobile.jpg") center/cover no-repeat;
-    padding: 2.2rem 1.4rem 2.4rem;
-    border-radius: 0.75rem;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-
-  /* Optional: show inline image instead  
-     (If you want the inline photo above the text on mobile instead of BG)
-     Just UNCOMMENT the next line: */
-
-  /* .hero-image { display: block; } */
-}
-
-
-
 
 /* BUTTONS */
 
@@ -535,14 +459,11 @@ input[type="submit"] {
   height: 22px;
 }
 
-
 /* Contact section heading tweak */
 
 .contact-section h2 {
   color: #1f2937;
 }
-
-
 
 /* FAQ ACCORDION -------------------------------------- */
 
@@ -704,8 +625,7 @@ input[type="submit"] {
   .hero {
     padding: 2.2rem 1.4rem 2.4rem;
     border-radius: 0.75rem;
-    background-image: url("images/hero-mobile.jpg");  /* 👈 use cropped version on phones */
-    background-position: center top;
+    background-position: center top; /* nicer crop */
   }
 
   .hero h2 {
@@ -717,41 +637,12 @@ input[type="submit"] {
     align-items: flex-start;
     gap: 0.6rem;
   }
-    .hero {
-    background: linear-gradient(135deg, #ffffff, #fef3c7); /* simple clean bg on mobile */
-  }
-
-  .hero-image {
-    display: block;   /* show the photo on mobile */
-  }
-
 
   .card-grid,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-
 }
-/* DESKTOP HERO WITH IMAGE ---------------------------------- */
-@media (min-width: 769px) {
-  .hero {
-    background: url("images/hero.jpg") center/cover no-repeat;
-    padding: 3rem 2rem 3.5rem;
-  }
-
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.65); /* soft fade overlay */
-    border-radius: inherit;
-  }
-
-  .hero > * {
-    position: relative; /* keep text above overlay */
-  }
-}
-
 
 /* ANIMATIONS */
 
