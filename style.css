@@ -122,10 +122,18 @@ section h2 {
 }
 
 .btn-outline {
-  border: 1px solid #e5e7eb;
-  color: #f9fafb;
-  background: transparent;
+  border: 2px solid #1f2937;        /* darker border */
+  color: #1f2937;                   /* dark readable text */
+  background: #ffffff;              /* white background for contrast */
+  transition: 0.2s;
 }
+
+.btn-outline:hover {
+  background: #1f2937;              /* dark hover */
+  color: #ffffff;                   /* white text on hover */
+  border-color: #1f2937;
+}
+
 
 .btn-outline:hover {
   background: rgba(249, 250, 251, 0.1);
