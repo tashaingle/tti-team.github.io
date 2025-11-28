@@ -287,6 +287,19 @@ footer {
 
 /* RESPONSIVE */
 
+/* Improve readability for the 'Ready to chat?' section */
+.contact-section {
+  background: #f9fafb;
+  color: #111827;
+  border-radius: 0.75rem;
+  padding: 1.75rem 1.25rem;
+}
+
+.contact-section h2 {
+  color: #1f2937;
+}
+
+
 @media (max-width: 768px) {
   header {
     padding: 2rem 1rem 1.25rem;
