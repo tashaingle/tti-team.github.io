@@ -114,31 +114,17 @@ section h2 {
   font-size: 1.35rem;
 }
 
-/* HERO (with background image) */
+/* HERO (base – used on mobile & as default) */
 
 .hero {
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: linear-gradient(135deg, #ffffff, #fef3c7);
   color: #111827;
-  padding: 3rem 2rem 3.5rem;
+  padding: 2.5rem 1.8rem 2.8rem;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
-  text-align: left;       /* add this if you want to be explicit */
+  text-align: left;
 }
-
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.65); /* soft overlay for readability */
-  border-radius: inherit;
-}
-
-.hero > * {
-  position: relative; /* keep text above overlay */
-}
-
 
 .hero h2 {
   font-size: 2rem;
@@ -156,6 +142,7 @@ section h2 {
   flex-wrap: wrap;
   gap: 0.9rem;
 }
+
 
 /* BUTTONS */
 
@@ -633,6 +620,26 @@ input[type="submit"] {
   }
 
 }
+/* DESKTOP HERO WITH IMAGE ---------------------------------- */
+@media (min-width: 769px) {
+  .hero {
+    background: url("images/hero.jpg") center/cover no-repeat;
+    padding: 3rem 2rem 3.5rem;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65); /* soft fade overlay */
+    border-radius: inherit;
+  }
+
+  .hero > * {
+    position: relative; /* keep text above overlay */
+  }
+}
+
 
 /* ANIMATIONS */
 
