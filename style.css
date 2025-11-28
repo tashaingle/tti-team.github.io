@@ -623,6 +623,14 @@ input[type="submit"] {
     align-items: flex-start;
     gap: 0.6rem;
   }
+    .hero {
+    background: linear-gradient(135deg, #ffffff, #fef3c7); /* simple clean bg on mobile */
+  }
+
+  .hero-image {
+    display: block;   /* show the photo on mobile */
+  }
+
 
   .card-grid,
   .gallery-grid {
