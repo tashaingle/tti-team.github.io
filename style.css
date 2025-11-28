@@ -1,10 +1,3 @@
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Our Services</a>
-  <a href="about.html">About TTI</a>
-  <a href="contact.html">Contact Us</a>
-</nav>
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,20 +7,22 @@
 
 body {
   background: #f5f7fa;
-  color: #222;
+  color: #1f2933;
   line-height: 1.6;
 }
 
+/* HEADER + NAV */
+
 header {
   text-align: center;
-  padding: 3rem 1rem 1.5rem;
+  padding: 2.5rem 1rem 1.5rem;
   background: #111827;
   color: #fff;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  letter-spacing: 0.05em;
+  font-size: 2.3rem;
+  letter-spacing: 0.06em;
 }
 
 header p {
@@ -41,7 +36,10 @@ nav {
   justify-content: center;
   gap: 1.5rem;
   background: #e5e7eb;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
@@ -55,33 +53,247 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* LAYOUT */
+
 main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem 3rem;
+  max-width: 1000px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
 }
 
 section {
   margin-bottom: 2rem;
   background: #fff;
   padding: 1.5rem 1.25rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 section h2 {
   margin-bottom: 0.75rem;
-  color: #1f2933;
+  color: #111827;
 }
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #fff;
+  padding: 2rem 1.5rem 2.5rem;
+  text-align: left;
+}
+
+.hero h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  margin-bottom: 1.25rem;
+  opacity: 0.95;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #fbbf24;
+  color: #111827;
+}
+
+.btn-primary:hover {
+  background: #facc15;
+}
+
+.btn-outline {
+  border: 1px solid #e5e7eb;
+  color: #f9fafb;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: rgba(249, 250, 251, 0.1);
+}
+
+/* LISTS */
 
 ul {
   list-style: disc;
   padding-left: 1.5rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
+/* CARDS / GRID */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #f9fafb;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4rem;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  background: #f9fafb;
+}
+
+.testimonial {
+  border-left: 4px solid #fbbf24;
+  padding-left: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  margin-bottom: 0.4rem;
+}
+
+.testimonial span {
   font-size: 0.85rem;
   color: #6b7280;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.75rem;
+}
+
+.gallery-item {
+  background: #e5e7eb;
+  border-radius: 0.75rem;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+/* FAQ */
+
+.faq-item + .faq-item {
+  margin-top: 0.75rem;
+}
+
+.faq-item h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* FORMS */
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  justify-self: flex-start;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 1.5rem 1rem 1.2rem;
+  font-size: 0.85rem;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 640px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
