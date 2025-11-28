@@ -5,6 +5,7 @@
   <title>Contact Us – TTI Management</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact TTI Management to discuss B&B management, cleaning, bookings and maintenance.">
 </head>
 
 <body>
@@ -23,31 +24,74 @@
   <main>
     <section>
       <h2>Get in Touch</h2>
-      <p>Email us anytime:  
-        <a href="mailto:info@ttimanagement.co.uk">info@ttimanagement.co.uk</a>
-      </p>
+      <p>You can email or call us directly, or use the enquiry form below.</p>
+      <p>Email: <a href="mailto:info@ttimanagement.co.uk">info@ttimanagement.co.uk</a></p>
       <p>Phone: 07xx xxx xxxx</p>
     </section>
 
     <section>
-      <h2>Business Hours</h2>
-      <p>Monday – Friday: 9am to 6pm</p>
-      <p>Weekends: We respond to enquiries as soon as we can</p>
+      <h2>Enquiry Form</h2>
+      <p>This form can email your enquiry to us. Replace the email in the code with your real address when you’re ready.</p>
+      <form action="https://formsubmit.co/info@ttimanagement.co.uk" method="POST">
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_subject" value="New enquiry from TTI website">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div>
+          <label for="name">Your name</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+          <label for="email">Your email</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="property">Property location (town / area)</label><br>
+          <input type="text" id="property" name="property">
+        </div>
+
+        <div>
+          <label for="message">How can we help?</label><br>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <input type="submit" value="Send Enquiry" class="btn btn-primary">
+      </form>
     </section>
 
     <section>
-      <h2>Work With Us</h2>
-      <p>If you're a B&B owner looking for help with cleaning, bookings, or 
-      maintenance, we’d love to chat.</p>
+      <h2>Service Area</h2>
+      <p>
+        We currently focus on local B&amp;B and short-stay properties in 
+        <strong>[your town/city and surrounding areas]</strong>. 
+        If you’re not sure whether we can cover your property, please get in touch and ask.
+      </p>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> TTI Management</p>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <strong>TTI Management</strong><br>
+          Cleaning • Bookings • Maintenance for B&amp;Bs
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <p>&copy; <span id="year"></span> TTI Management</p>
+    </div>
   </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
