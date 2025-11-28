@@ -299,6 +299,36 @@ footer {
   color: #1f2937;
 }
 
+/* Mobile contact bar */
+
+.mobile-contact-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111827;
+  color: #f9fafb;
+  padding: 0.4rem 0.75rem;
+  display: none; /* only show on small screens */
+  z-index: 50;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-contact-bar a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0.3rem;
+  border-right: 1px solid #374151;
+}
+
+.mobile-contact-bar a:last-child {
+  border-right: none;
+}
+
 
 @media (max-width: 768px) {
   header {
@@ -366,6 +396,15 @@ footer {
   .footer-links a {
     display: inline-block;
     margin-bottom: 0.25rem;
+  }
+
+  /* show mobile contact bar on small screens and add bottom space */
+  .mobile-contact-bar {
+    display: flex;
+  }
+
+  body {
+    padding-bottom: 3rem; /* space so content isn't hidden behind the bar */
   }
 }
 
