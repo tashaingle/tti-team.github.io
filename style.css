@@ -84,7 +84,6 @@ section h2 {
   border-radius: 0.75rem;
 }
 
-
 .hero h2 {
   font-size: 1.9rem;
   margin-bottom: 0.75rem;
@@ -101,6 +100,8 @@ section h2 {
   gap: 0.75rem;
 }
 
+/* BUTTONS */
+
 .btn {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -110,6 +111,7 @@ section h2 {
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
 .btn-primary {
@@ -134,9 +136,9 @@ section h2 {
   border-color: #1f2937;
 }
 
-
-.btn-outline:hover {
-  background: rgba(249, 250, 251, 0.1);
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
 }
 
 /* LISTS */
@@ -159,6 +161,7 @@ ul {
   border-radius: 0.75rem;
   padding: 1rem 1rem 1.1rem;
   border: 1px solid #e5e7eb;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .card h3 {
@@ -173,6 +176,12 @@ ul {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 0.4rem;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.15);
+  background: #ffffff;
 }
 
 /* TESTIMONIALS */
@@ -291,11 +300,8 @@ footer {
   text-decoration: underline;
 }
 
-/* RESPONSIVE */
-
-/* RESPONSIVE */
-
 /* Improve readability for the 'Ready to chat?' section */
+
 .contact-section {
   background: #f9fafb;
   color: #111827;
@@ -314,29 +320,30 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #111827;
-  color: #f9fafb;
-  padding: 0.4rem 0.75rem;
-  display: none; /* only show on small screens */
-  z-index: 50;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+  background: #111827; /* dark navy/charcoal */
+  color: #ffffff;
+  padding: 0.6rem 0.75rem;
+  display: none;         /* hidden on desktop */
+  z-index: 999;
+  border-top: 1px solid #1f2937;
 }
 
 .mobile-contact-bar a {
   flex: 1;
   text-align: center;
   text-decoration: none;
-  color: inherit;
-  font-size: 0.9rem;
+  color: #ffffff;        /* white link text */
+  font-size: 1rem;
   font-weight: 600;
   padding: 0.4rem 0.3rem;
-  border-right: 1px solid #374151;
+  display: block;
 }
 
-.mobile-contact-bar a:last-child {
-  border-right: none;
+.mobile-contact-bar a + a {
+  border-left: 1px solid #374151; /* divider between links */
 }
 
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   header {
@@ -412,10 +419,9 @@ footer {
   }
 
   body {
-    padding-bottom: 3rem; /* space so content isn't hidden behind the bar */
+    padding-bottom: 3.5rem; /* space so content isn't hidden behind the bar */
   }
 }
-
 
 /* ANIMATIONS */
 
@@ -447,25 +453,4 @@ footer {
 
 .fade-in-delay-3 {
   animation-delay: 0.3s;
-}
-
-/* Smooth hover effects on cards and buttons */
-
-.card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.15);
-  background: #ffffff;
-}
-
-.btn {
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
 }
