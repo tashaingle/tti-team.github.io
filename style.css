@@ -411,6 +411,37 @@ input[type="submit"] {
   color: #9ca3af;
 }
 
+/* SOCIAL BUTTONS ------------------------------------ */
+
+.footer-social {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social li a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1f2937;
+  color: #fbbf24;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social li a:hover {
+  background: #fbbf24;
+  color: #111827;
+  transform: translateY(-2px);
+}
+
+
 
 /* Contact section heading tweak */
 
