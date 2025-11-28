@@ -347,49 +347,79 @@ input[type="submit"] {
   justify-self: flex-start;
 }
 
-/* FOOTER */
+/* NEW FOOTER -------------------------------------------------- */
 
-footer {
-  background: #020617;
-  color: #9ca3af;
-  padding: 1.7rem 1rem 1.4rem;
-  font-size: 0.85rem;
-  border-top: 1px solid #1f2937;
+.site-footer {
+  background: #0a0f1a;
+  color: #cbd5e1;
+  padding: 2.5rem 1rem 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #1e293b;
 }
 
-.footer-inner {
-  max-width: 1000px;
+.footer-container {
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
 }
 
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+.footer-col h4 {
+  color: #fbbf24;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
-.footer-links a {
-  color: #e5e7eb;
-  text-decoration: none;
-  margin-right: 0.75rem;
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
   font-size: 0.9rem;
+  opacity: 0.8;
+  max-width: 220px;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Improve readability for the 'Ready to chat?' section */
-
-.contact-section {
-  background: #f9fafb;
-  color: #111827;
-  border-radius: 0.75rem;
-  padding: 1.75rem 1.25rem;
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 0.5rem;
 }
+
+.footer-links a,
+.footer-contact a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 0.92rem;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #fbbf24;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
 
 .contact-section h2 {
   color: #1f2937;
