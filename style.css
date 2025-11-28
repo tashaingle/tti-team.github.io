@@ -78,10 +78,11 @@ section h2 {
 
 .hero {
   background: linear-gradient(135deg, #111827, #1f2937);
-  color: #fff;
+  color: #fefce8;   /* brighter */
   padding: 2rem 1.5rem 2.5rem;
   text-align: left;
 }
+
 
 .hero h2 {
   font-size: 1.9rem;
