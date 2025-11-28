@@ -114,16 +114,13 @@ section h2 {
   font-size: 1.35rem;
 }
 
-/* HERO */
+/* HERO (with background image) */
 
 .hero {
-  background: linear-gradient(135deg, #ffffff, #fef3c7);
-  color: var(--color-text);
-  padding: 2.5rem 2rem 2.8rem;
-  text-align: left;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  color: #111827;
+  padding: 3rem 2rem 3.5rem;
   border-radius: 1rem;
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -131,14 +128,15 @@ section h2 {
 .hero::before {
   content: "";
   position: absolute;
-  right: -80px;
-  top: -80px;
-  width: 220px;
-  height: 220px;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.3), transparent 60%);
-  opacity: 0.9;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.65); /* soft overlay for readability */
+  border-radius: inherit;
 }
+
+.hero > * {
+  position: relative; /* keep text above overlay */
+}
+
 
 .hero h2 {
   font-size: 2rem;
