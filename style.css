@@ -142,6 +142,16 @@ section h2 {
   flex-wrap: wrap;
   gap: 0.9rem;
 }
+.hero-image {
+  display: none;                 /* hidden by default (desktop uses background) */
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+  margin-bottom: 1.2rem;
+  object-fit: cover;
+}
+
 
 
 /* BUTTONS */
