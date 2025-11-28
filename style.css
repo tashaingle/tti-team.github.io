@@ -77,10 +77,11 @@ section h2 {
 /* HERO */
 
 .hero {
-  background: linear-gradient(135deg, #111827, #1f2937);
-  color: #fefce8;   /* brighter */
+  background: #f3f4f6;       /* light grey */
+  color: #111827;            /* dark readable text */
   padding: 2rem 1.5rem 2.5rem;
   text-align: left;
+  border-radius: 0.75rem;
 }
 
 
