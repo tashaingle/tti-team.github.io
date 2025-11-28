@@ -449,35 +449,7 @@ input[type="submit"] {
   color: #1f2937;
 }
 
-/* Mobile contact bar */
 
-.mobile-contact-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #111827; /* dark navy/charcoal */
-  color: #ffffff;
-  padding: 0.6rem 0.75rem;
-  display: none;         /* hidden on desktop */
-  z-index: 999;
-  border-top: 1px solid #1f2937;
-}
-
-.mobile-contact-bar a {
-  flex: 1;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;        /* white link text */
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.4rem 0.3rem;
-  display: block;
-}
-
-.mobile-contact-bar a + a {
-  border-left: 1px solid #374151; /* divider between links */
-}
 
 /* FAQ ACCORDION -------------------------------------- */
 
@@ -660,14 +632,6 @@ input[type="submit"] {
     grid-template-columns: 1fr;
   }
 
-  /* show mobile contact bar on small screens and add bottom space */
-  .mobile-contact-bar {
-    display: flex;
-  }
-
-  body {
-    padding-bottom: 3.5rem; /* space so content isn't hidden behind the bar */
-  }
 }
 
 /* ANIMATIONS */
