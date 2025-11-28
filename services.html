@@ -165,5 +165,15 @@
     <a href="https://wa.me/447850177876" target="_blank" rel="noopener">WhatsApp</a>
     <a href="mailto:info@ttimanagement.co.uk">Email</a>
   </div>
+    <script>
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector(".faq-question");
+    btn.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+</script>
 </body>
 </html>
