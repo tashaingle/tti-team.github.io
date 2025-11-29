@@ -690,6 +690,12 @@ input[type="submit"] {
   font-size: 1.9rem;
   color: #1f3f6b;   /* deep blue icon colour */
 }
+/* centered button after services */
+.services-cta {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
 
 /* ==== WHY CHOOSE – mockup-style layout ==== */
 
