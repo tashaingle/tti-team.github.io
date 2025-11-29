@@ -125,7 +125,8 @@ section h2 {
   border-radius: 1rem;
   overflow: hidden;
   text-align: left;
-  background: url("images/hero-mobile.jpg") center/cover no-repeat;
+  background: url("images/hero.jpg?v=2") center/cover no-repeat;
+
 }
 
 /* soft white fade on top of the photo */
