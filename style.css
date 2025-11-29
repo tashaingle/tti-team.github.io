@@ -678,6 +678,7 @@ input[type="submit"] {
   background: #f6c657;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
   font-size: 1.9rem;
+  color: #1f3f6b;   /* deep blue icon colour */
 }
 
 /* ==== WHY CHOOSE – mockup-style layout ==== */
@@ -749,7 +750,7 @@ input[type="submit"] {
   justify-content: center;
   border: 2px solid #fbbf24;
   background: #fffdf4;
-  color: #111827;
+ color: #1f3f6b;
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
 }
