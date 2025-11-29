@@ -109,6 +109,16 @@ section {
   border: 1px solid rgba(226, 232, 240, 0.9);
 }
 
+/* flatter section style for homepage sections like in the mockup */
+.section-plain {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 section h2 {
   margin-bottom: 0.9rem;
   color: #111827;
