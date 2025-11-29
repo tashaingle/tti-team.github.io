@@ -129,32 +129,24 @@ section h2 {
   color: #ffffff;
   border-radius: 1.25rem;
   overflow: hidden;
-}
-
-/* Put the bed photo + blue gradient BEHIND the text */
-.hero-upgraded::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background:
-    /* blue gradient on the left fading over the image */
+    /* blue overlay on the left fading out to show the bed */
     linear-gradient(
-      115deg,
-      rgba(15, 37, 80, 0.95) 0%,
-      rgba(15, 37, 80, 0.9) 38%,
-      rgba(15, 37, 80, 0.45) 60%,
-      rgba(15, 37, 80, 0.0) 100%
+      to right,
+      rgba(15, 37, 80, 0.96) 0%,
+      rgba(15, 37, 80, 0.94) 35%,
+      rgba(15, 37, 80, 0.75) 55%,
+      rgba(15, 37, 80, 0.0) 75%
     ),
-    url("images/hero.jpg") center/cover no-repeat; /* your bed image */
-  z-index: -1;  /* keeps it behind the text */
+    url("images/hero.jpg") center/cover no-repeat;  /* your bed photo */
 }
 
-/* Container for the text so it stays on the left like the mockup */
+/* text container so content stays on the left side */
 .hero-inner {
   max-width: 540px;
 }
 
-/* Headline + text styling */
+/* Headline + body text */
 .hero-inner h2 {
   font-size: clamp(2.4rem, 3vw + 1.4rem, 3.1rem);
   line-height: 1.1;
@@ -169,17 +161,25 @@ section h2 {
   margin-bottom: 2rem;
 }
 
-/* Buttons row in the hero */
+/* Buttons row */
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
 }
 
-/* Responsive tweaks so it still looks good on mobile */
+/* Mobile tweaks */
 @media (max-width: 768px) {
   .hero-upgraded {
     padding: 2.6rem 1.6rem 3rem;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(15, 37, 80, 0.9) 0%,
+        rgba(15, 37, 80, 0.8) 40%,
+        rgba(15, 37, 80, 0.1) 80%
+      ),
+      url("images/hero.jpg") center/cover no-repeat;
   }
 
   .hero-inner h2 {
@@ -191,6 +191,7 @@ section h2 {
     align-items: flex-start;
   }
 }
+
 
 /* BUTTONS */
 
