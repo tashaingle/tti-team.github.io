@@ -122,72 +122,78 @@ section h2 {
   overflow: hidden;
 }
 
-/* Blue panel + side-by-side layout with image on the right */
+/* Full hero wrapper */
 .hero-upgraded {
-  position: relative;
-  background: #1f3f6b; /* deep blue panel like screenshot */
-  color: #f9fafb;
+  background: #1f3f6b; /* deep blue panel */
+  padding: 0;          /* IMPORTANT: remove padding so both columns match height */
   border-radius: 1.25rem;
-  padding: 3rem 2.2rem 3.2rem;
-  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.45);
 }
 
+/* GRID: 2 equal columns */
 .hero-shell {
-  max-width: 1120px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;   /* equal columns */
-  gap: 3rem;
-  align-items: stretch;             /* both columns same height */
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;       /* force same height */
+  height: 500px;              /* <<< THE FIX — gives the hero a real height */
+  border-radius: inherit;
+  overflow: hidden;
 }
 
-
-.hero-copy h2 {
-  font-size: clamp(2.3rem, 3vw + 1.2rem, 3.1rem);
-  line-height: 1.1;
-  margin-bottom: 1rem;
+/* LEFT SIDE TEXT */
+.hero-copy {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #ffffff;
 }
 
+.hero-copy h2 {
+  font-size: clamp(2.3rem, 3vw + 1.2rem, 3.1rem);
+  margin-bottom: 1rem;
+}
+
 .hero-copy p {
-  max-width: 32rem;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  opacity: 0.96;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  color: #e5e7eb;
+  max-width: 30rem;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-}
-
-.hero-actions .btn {
-  font-size: 0.95rem;
-}
-
-/* right-hand hero image */
-
-/* right-hand hero image */
-
+/* RIGHT SIDE IMAGE fills the whole column */
 .hero-photo-wrapper {
   width: 100%;
   height: 100%;
-  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.55);
-  align-self: stretch;         /* fill the full column height */
 }
 
 .hero-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;           /* fill the whole card */
+  object-fit: cover;
   display: block;
 }
 
+/* Buttons in hero */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Responsive: stack panels on mobile */
+@media (max-width: 900px) {
+  .hero-shell {
+    grid-template-columns: 1fr;
+    height: auto;             /* remove fixed height on mobile */
+  }
+
+  .hero-photo-wrapper {
+    height: 320px;            /* nice fixed height when stacked */
+  }
+
+  .hero-copy {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+}
 
 
 /* BUTTONS */
