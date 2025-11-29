@@ -124,12 +124,12 @@ section h2 {
 
 /* Blue panel + side-by-side layout with image on the right */
 .hero-upgraded {
-  background: #1f3f6b;
-  color: #ffffff;
-  padding: 3.7rem 2.2rem 3.3rem;
-  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.45);
+  position: relative;
+  background: #1f3f6b; /* deep blue panel like screenshot */
+  color: #f9fafb;
   border-radius: 1.25rem;
-  border: none;
+  padding: 3rem 2.2rem 3.2rem;
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.45);
 }
 
 .hero-shell {
@@ -138,7 +138,7 @@ section h2 {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
   gap: 3rem;
-  align-items: center;
+  align-items: stretch;
 }
 
 .hero-copy h2 {
@@ -167,24 +167,22 @@ section h2 {
   font-size: 0.95rem;
 }
 
-/* right-hand hero image */
+/* right-hand hero image fills its "square" */
 
 .hero-photo-wrapper {
-  border-radius: 26px;
+  width: 100%;
+  aspect-ratio: 4 / 3;          /* nice photo shape */
+  border-radius: 28px;
   overflow: hidden;
-  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.7);
-  background: #111827;
-  max-width: 420px;         /* hard cap on width */
-  justify-self: end;        /* keeps it snug to the right */
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.55);
 }
 
 .hero-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;      /* consistent shape */
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover;            /* fills the square */
   display: block;
 }
-
 
 /* BUTTONS */
 
@@ -732,12 +730,13 @@ input[type="submit"] {
 
 @media (max-width: 900px) {
   .hero-shell {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 1fr;   /* stack text and image */
+    gap: 2rem;
   }
 
   .hero-photo-wrapper {
     max-width: 420px;
-    margin: 1.5rem auto 0;
+    margin: 0 auto;
   }
 }
 
