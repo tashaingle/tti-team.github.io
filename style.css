@@ -152,6 +152,17 @@ section h2 {
   line-height: 1.1;
   margin-bottom: 1rem;
 }
+.hero-inner h2 {
+  font-size: clamp(2.4rem, 3vw + 1.4rem, 3.1rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+/* FORCE HERO HEADING TO BE WHITE */
+.hero-upgraded h2 {
+  color: #ffffff !important;
+}
+
 
 .hero-inner p {
   font-size: 0.98rem;
