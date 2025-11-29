@@ -114,44 +114,44 @@ section h2 {
   font-size: 1.35rem;
 }
 
-/* HERO – mobile first (uses hero-mobile.jpg) */
-
-/* HERO – mobile first (uses hero-mobile.jpg) */
+/* HERO – uses bed photo with blue/white theme */
 
 .hero {
   position: relative;
-  color: #111827;
-  padding: 2.5rem 1.8rem 2.8rem;
-  border-radius: 1rem;
+  padding: 2.8rem 1.8rem 3rem;
+  border-radius: 1.1rem;
   overflow: hidden;
   text-align: left;
-  background: url("images/hero.jpg?v=2") center/cover no-repeat;
-
+  color: #ffffff; /* make headline + text white */
 }
 
-/* soft white fade on top of the photo */
+/* Background image + gentle dark gradient + brightness boost */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
- background: rgba(255, 255, 255, 0.85) !important;
+  background:
+    linear-gradient(120deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.2)),
+    url("images/hero.jpg?v=2") center/cover no-repeat;
+  filter: brightness(1.25); /* brighten the bed photo */
   border-radius: inherit;
   pointer-events: none;
+  z-index: -1; /* sit behind the text */
 }
 
-/* keep text & buttons above fade */
+/* keep text & buttons above the image */
 .hero > * {
   position: relative;
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 0.75rem;
 }
 
 .hero p {
   margin-bottom: 1.4rem;
-  opacity: 0.95;
+  opacity: 0.96;
   max-width: 40rem;
 }
 
@@ -161,36 +161,18 @@ section h2 {
   gap: 0.9rem;
 }
 
-/* DESKTOP / WIDER SCREENS – use wide hero.jpg */
-@media (min-width: 769px) {
-  .hero {
-    background: url("images/hero.jpg") center/cover no-repeat;
-    padding: 3rem 2rem 3.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-}
-
 /* MOBILE TWEAKS */
 @media (max-width: 768px) {
   .hero {
-    padding: 2.2rem 1.4rem 2.4rem;
-    border-radius: 0.75rem;
-    background-position: center top; /* nicer crop */
+    padding: 2.3rem 1.4rem 2.5rem;
+    border-radius: 0.9rem;
   }
 
   .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
+    font-size: 1.7rem;
   }
 }
+
 
 
 /* BUTTONS */
