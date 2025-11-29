@@ -866,4 +866,22 @@ input[type="submit"] {
   background: transparent;
 }
 
+/* Make hero text white when using the upgraded style */
+.hero-upgraded h2,
+.hero-upgraded p,
+.hero-upgraded .btn-outline {
+  color: #ffffff !important;
+}
+
+/* Outline button inverted for visibility on dark background */
+.hero-upgraded .btn-outline {
+  border-color: #ffffff;
+}
+
+.hero-upgraded .btn-outline:hover {
+  background: #ffffff;
+  color: #111827 !important;
+}
+
+
 
