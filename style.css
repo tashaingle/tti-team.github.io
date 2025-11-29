@@ -243,11 +243,19 @@ section h2 {
   color: #ffffff;
 }
 
-/* Invert outline button on dark hero */
+/* FIX – Make outline button readable on the hero */
 .hero-upgraded .btn-outline {
   border-color: #ffffff;
-  color: #ffffff;
+  color: #1f2937 !important; /* dark navy text */
+  background: transparent;
 }
+
+/* On hover: white background + dark text */
+.hero-upgraded .btn-outline:hover {
+  background: #ffffff;
+  color: #1f2937 !important;
+}
+
 
 .hero-upgraded .btn-outline:hover {
   background: #ffffff;
