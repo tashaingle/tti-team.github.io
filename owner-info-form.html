@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Information Form | TTI Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Owner information form for B&B and short-stay property owners working with TTI Management.">
+</head>
+
+<body>
+  <header>
+    <h1>Owner Information Form</h1>
+    <p>Tell us about your property so we can manage it smoothly</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About TTI</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="quote.html">Get a Quote</a>
+    <a href="owner-portal.html">Owner Portal</a>
+  </nav>
+
+  <main>
+
+    <section class="fade-in">
+      <h2>How We Use This Form</h2>
+      <p>
+        This form helps us gather the practical details we need to look after your B&amp;B or short-stay property.
+        Please complete as much as you can – if you’re not sure about something, you can leave it blank and we’ll
+        discuss it with you later.
+      </p>
+      <p>
+        Once submitted, your responses will be emailed securely to TTI Management. We’ll review them and follow up
+        with any questions.
+      </p>
+    </section>
+
+    <section class="fade-in fade-in-delay-1">
+      <h2>Owner &amp; Property Details</h2>
+
+      <form action="https://formsubmit.co/info@ttimanagement.co.uk" method="POST">
+        <!-- FormSubmit options -->
+        <input type="hidden" name="_subject" value="New Owner Information Form - TTI Management">
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- 1. Owner Details -->
+        <h3>1. Owner Details</h3>
+        <div>
+          <label for="owner_name">Full name</label><br>
+          <input type="text" id="owner_name" name="Owner name" required>
+        </div>
+
+        <div>
+          <label for="owner_email">Email address</label><br>
+          <input type="email" id="owner_email" name="Owner email" required>
+        </div>
+
+        <div>
+          <label for="owner_phone">Phone number</label><br>
+          <input type="text" id="owner_phone" name="Owner phone">
+        </div>
+
+        <div>
+          <label for="owner_contact_pref">Preferred contact method</label><br>
+          <input type="text" id="owner_contact_pref" name="Preferred contact method" placeholder="e.g. Email, Phone, WhatsApp">
+        </div>
+
+        <div>
+          <label for="emergency_contact">Emergency contact (in case we can’t reach you)</label><br>
+          <textarea id="emergency_contact" name="Emergency contact" placeholder="Name, phone number, relationship"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 2. Property Details -->
+        <h3>2. Property Details</h3>
+
+        <div>
+          <label for="property_name">Property name (if any)</label><br>
+          <input type="text" id="property_name" name="Property name">
+        </div>
+
+        <div>
+          <label for="property_address">Full property address</label><br>
+          <textarea id="property_address" name="Property address" required></textarea>
+        </div>
+
+        <div>
+          <label for="property_type">Property type</label><br>
+          <input type="text" id="property_type" name="Property type" placeholder="e.g. House, Flat, Annex">
+        </div>
+
+        <div>
+          <label for="bedrooms">Number of bedrooms</label><br>
+          <input type="text" id="bedrooms" name="Number of bedrooms">
+        </div>
+
+        <div>
+          <label for="bathrooms">Number of bathrooms</label><br>
+          <input type="text" id="bathrooms" name="Number of bathrooms">
+        </div>
+
+        <div>
+          <label for="max_guests">Maximum guest capacity</label><br>
+          <input type="text" id="max_guests" name="Maximum guest capacity">
+        </div>
+
+        <div>
+          <label for="parking_info">Parking information</label><br>
+          <textarea id="parking_info" name="Parking information" placeholder="e.g. Driveway, on-street, permit required"></textarea>
+        </div>
+
+        <div>
+          <label for="wifi_details">Wi-Fi details</label><br>
+          <textarea id="wifi_details" name="Wi-Fi details" placeholder="Network name and password"></textarea>
+        </div>
+
+        <div>
+          <label for="restricted_areas">Areas guests should not access (if any)</label><br>
+          <textarea id="restricted_areas" name="Restricted areas" placeholder="e.g. Locked cupboard, private room"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 3. Access & Keys -->
+        <h3>3. Access &amp; Keys</h3>
+
+        <div>
+          <label for="access_method">Access method</label><br>
+          <input type="text" id="access_method" name="Access method" placeholder="e.g. Lockbox, smart lock, keys handed over">
+        </div>
+
+        <div>
+          <label for="access_instructions">Instructions for entering the property</label><br>
+          <textarea id="access_instructions" name="Access instructions" placeholder="Lockbox location, codes, any gate or entrance details"></textarea>
+        </div>
+
+        <div>
+          <label for="alarm_info">Alarm system (if applicable)</label><br>
+          <textarea id="alarm_info" name="Alarm information" placeholder="Alarm code and basic instructions, if there is an alarm"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 4. Booking Platforms -->
+        <h3>4. Booking Platform Information</h3>
+
+        <div>
+          <label for="airbnb_link">Airbnb listing link</label><br>
+          <input type="text" id="airbnb_link" name="Airbnb listing link">
+        </div>
+
+        <div>
+          <label for="booking_link">Booking.com listing / extranet link</label><br>
+          <input type="text" id="booking_link" name="Booking.com link">
+        </div>
+
+        <div>
+          <label for="vrbo_link">Vrbo listing link</label><br>
+          <input type="text" id="vrbo_link" name="Vrbo listing link">
+        </div>
+
+        <div>
+          <label for="direct_booking">Direct booking / other platforms</label><br>
+          <textarea id="direct_booking" name="Direct booking / other platforms" placeholder="Website, other portals, channel managers, etc."></textarea>
+        </div>
+
+        <div>
+          <label for="account_control">Who currently controls the booking accounts?</label><br>
+          <input type="text" id="account_control" name="Account control" placeholder="e.g. Owner, joint access, TTI to be added">
+        </div>
+
+        <hr>
+
+        <!-- 5. Cleaning & Laundry -->
+        <h3>5. Cleaning &amp; Laundry Preferences</h3>
+
+        <div>
+          <label for="linen_provided">Do you provide your own linen?</label><br>
+          <input type="text" id="linen_provided" name="Linen provided" placeholder="Yes / No / Would like advice">
+        </div>
+
+        <div>
+          <label for="linen_storage">Where is linen stored?</label><br>
+          <textarea id="linen_storage" name="Linen storage"></textarea>
+        </div>
+
+        <div>
+          <label for="cleaning_instructions">Any special cleaning instructions?</label><br>
+          <textarea id="cleaning_instructions" name="Special cleaning instructions" placeholder="Delicate flooring, products to avoid, etc."></textarea>
+        </div>
+
+        <div>
+          <label for="cleaning_supplies">Where are cleaning supplies kept?</label><br>
+          <textarea id="cleaning_supplies" name="Cleaning supplies location"></textarea>
+        </div>
+
+        <div>
+          <label for="toiletries">Do you provide guest toiletries? If yes, what?</label><br>
+          <textarea id="toiletries" name="Guest toiletries"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 6. Appliances -->
+        <h3>6. Appliances &amp; Instructions</h3>
+
+        <div>
+          <label for="appliance_info">Appliance notes</label><br>
+          <textarea id="appliance_info" name="Appliance information" placeholder="Heating, hot water, oven/hob, washing machine, TV, anything with quirks"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 7. Safety -->
+        <h3>7. Safety Information</h3>
+
+        <div>
+          <label for="safety_alarms">Smoke/CO alarms and safety equipment</label><br>
+          <textarea id="safety_alarms" name="Safety alarms & equipment" placeholder="Where smoke alarms, CO alarms, fire extinguisher/blanket are located"></textarea>
+        </div>
+
+        <div>
+          <label for="safety_certificates">Gas / electrical safety certificates status (if applicable)</label><br>
+          <textarea id="safety_certificates" name="Safety certificates"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 8. Maintenance -->
+        <h3>8. Maintenance Preferences</h3>
+
+        <div>
+          <label for="maintenance_pref">How should we handle maintenance and repairs?</label><br>
+          <textarea id="maintenance_pref" name="Maintenance preferences" placeholder="e.g. Contact you first, approve up to a certain amount, preferred tradespeople, etc."></textarea>
+        </div>
+
+        <div>
+          <label for="maintenance_spend">Maximum spend we can approve without asking first (optional)</label><br>
+          <input type="text" id="maintenance_spend" name="Maintenance spend limit" placeholder="e.g. £30, £50">
+        </div>
+
+        <div>
+          <label for="preferred_trades">Preferred tradespeople (if any)</label><br>
+          <textarea id="preferred_trades" name="Preferred tradespeople" placeholder="Names and contact details of any plumbers, electricians, etc. you’d like us to use"></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 9. House Rules -->
+        <h3>9. House Rules</h3>
+
+        <div>
+          <label for="house_rules">Your house rules</label><br>
+          <textarea id="house_rules" name="House rules" placeholder="e.g. No smoking, no parties, quiet hours, pets policy, etc."></textarea>
+        </div>
+
+        <hr>
+
+        <!-- 10. Anything Else -->
+        <h3>10. Anything Else We Should Know?</h3>
+
+        <div>
+          <label for="extra_info">Additional notes about your property</label><br>
+          <textarea id="extra_info" name="Additional information" placeholder="Quirks, neighbours, bin days, local rules, anything else you’d like us to know."></textarea>
+        </div>
+
+        <input type="submit" value="Submit Owner Information" class="btn btn-primary">
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer centered-footer">
+    <div class="footer-container-center">
+      <h3 class="footer-logo">TTI Management</h3>
+      <p class="footer-tagline">Cleaning • Bookings • Maintenance for B&amp;Bs</p>
+
+      <ul class="footer-links-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About TTI</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="owner-portal.html">Owner Portal</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="legal.html">Legal Information</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="complaints.html">Complaints Policy</a></li>
+      </ul>
+
+      <ul class="footer-contact-center">
+        <li><a href="tel:07850177876">📞 07850 177 876</a></li>
+        <li><a href="mailto:info@ttimanagement.co.uk">✉️ info@ttimanagement.co.uk</a></li>
+        <li><a href="https://wa.me/447850177876" target="_blank">💬 WhatsApp</a></li>
+      </ul>
+
+      <p class="footer-copy">
+        &copy; <span id="year"></span> TTI Management. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
