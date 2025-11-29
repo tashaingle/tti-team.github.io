@@ -243,12 +243,18 @@ section h2 {
   color: #ffffff;
 }
 
-/* FIX – Make outline button readable on the hero */
+/* HERO OUTLINE BUTTON — ALWAYS VISIBLE */
 .hero-upgraded .btn-outline {
-  border-color: #ffffff;
-  color: #1f2937 !important; /* dark navy text */
-  background: transparent;
+  background: #ffffff;        /* solid white */
+  color: #1f2937 !important;  /* dark navy text */
+  border: 2px solid #ffffff;  /* clean white border */
 }
+
+.hero-upgraded .btn-outline:hover {
+  background: #fbbf24;        /* yellow on hover (optional) */
+  color: #111827 !important;  /* dark text */
+}
+
 
 /* On hover: white background + dark text */
 .hero-upgraded .btn-outline:hover {
