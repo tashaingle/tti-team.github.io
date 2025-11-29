@@ -134,7 +134,7 @@ section h2 {
   content: "";
   position: absolute;
   inset: 0;
- background: rgba(255, 255, 255, 0.75) !important;
+ background: rgba(255, 255, 255, 0.85) !important;
   border-radius: inherit;
   pointer-events: none;
 }
