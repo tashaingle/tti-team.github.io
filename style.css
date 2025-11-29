@@ -861,3 +861,9 @@ input[type="submit"] {
   color: #f9fafb;
 }
 
+/* Make sure the upgraded hero doesn't use the white overlay */
+.hero-upgraded::before {
+  background: transparent;
+}
+
+
