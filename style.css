@@ -1,14 +1,14 @@
-/* THEME + BASE */
+/* THEME + BASE – Bee & Bee */
 
 :root {
-  --color-bg: #0f172a;        /* deep navy */
-  --color-bg-soft: #f3f4f6;   /* light grey */
-  --color-primary: #fbbf24;   /* warm yellow */
-  --color-primary-dark: #f59e0b;
-  --color-text: #111827;      /* main text */
+  --color-bg: #111111;          /* deep near-black */
+  --color-bg-soft: #fff7e5;     /* warm cream (like logo background) */
+  --color-primary: #fbbf24;     /* honey yellow */
+  --color-primary-dark: #e59e0b;/* deeper gold */
+  --color-text: #111827;        /* main text */
   --color-text-soft: #4b5563;
   --color-card: #ffffff;
-  --color-border: #e5e7eb;
+  --color-border: #fde68a;      /* soft golden border */
 }
 
 * {
@@ -20,20 +20,28 @@
 }
 
 body {
-  background: radial-gradient(circle at top left, #e5e7eb, #f9fafb 40%, #e5e7eb 100%);
+  /* warm honey/cream background instead of grey/blue */
+  background: radial-gradient(
+    circle at top left,
+    #fff7e5,
+    #fffbeb 45%,
+    #fef3c7 100%
+  );
   color: var(--color-text);
   line-height: 1.6;
 }
+
 
 /* HEADER + NAV */
 
 header {
   text-align: center;
   padding: 2.8rem 1rem 1.7rem;
-  background: linear-gradient(135deg, #020617, #111827);
+  background: linear-gradient(135deg, #111111, #854d0e); /* black → rich gold-brown */
   color: #fff;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
 }
+
 
 header h1 {
   font-size: 2.3rem;
@@ -49,16 +57,19 @@ header p {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
   justify-content: center;
-  gap: 1.5rem;
-  background: rgba(15, 23, 42, 0.9);
+  align-items: center;
+  background: rgba(17, 17, 17, 0.96);           /* near-black bar */
   padding: 0.8rem 1rem;
   position: sticky;
   top: 0;
   z-index: 10;
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.6);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.8); /* golden line */
 }
+
 
 nav a {
   position: relative;
@@ -139,16 +150,16 @@ section h2 {
   color: #ffffff;
   border-radius: 1.25rem;
   overflow: hidden;
-  background:
-    /* blue overlay on the left fading out to show the bed */
-    linear-gradient(
-      to right,
-      rgba(15, 37, 80, 0.96) 0%,
-      rgba(15, 37, 80, 0.94) 35%,
-      rgba(15, 37, 80, 0.75) 55%,
-      rgba(15, 37, 80, 0.0) 75%
-    ),
-    url("images/hero.jpg") center/cover no-repeat;  /* your bed photo */
+background:
+  linear-gradient(
+    to right,
+    rgba(17, 17, 17, 0.96) 0%,
+    rgba(17, 17, 17, 0.94) 35%,
+    rgba(17, 17, 17, 0.75) 55%,
+    rgba(17, 17, 17, 0.0) 75%
+  ),
+  url("images/hero.jpg") center/cover no-repeat;
+
 }
 
 /* text container so content stays on the left side */
@@ -688,7 +699,7 @@ input[type="submit"] {
   background: #f6c657;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
   font-size: 1.9rem;
-  color: #1f3f6b;   /* deep blue icon colour */
+    color: #111111;   /* dark/black icon colour */
 }
 /* centered button after services */
 .services-cta {
@@ -766,7 +777,7 @@ input[type="submit"] {
   justify-content: center;
   border: 2px solid #fbbf24;
   background: #fffdf4;
- color: #1f3f6b;
+   color: #111111;
   font-size: 1.6rem;
   margin-bottom: 0.7rem;
 }
@@ -903,3 +914,12 @@ input[type="submit"] {
 .fade-in-delay-3 {
   animation-delay: 0.3s;
 }
+
+/* Bee & Bee logo in page headers */
+.brand-logo {
+  max-width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.1rem;
+}
+
