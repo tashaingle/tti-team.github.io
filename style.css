@@ -365,9 +365,16 @@ ul {
 /* GALLERY */
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  overflow-x: auto;
   gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+  flex: 0 0 70%;
+  scroll-snap-align: start;
 }
 
 
