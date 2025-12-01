@@ -837,13 +837,14 @@ input[type="submit"] {
 
 /* For Property Owners block – cleaner styles */
 .owners-block {
-  background: #fefce8;
+  background: rgba(255, 255, 255, 0.96);      /* same as other sections */
   border-radius: 1.1rem;
   padding: 1.8rem 1.6rem;
   margin: 2.4rem 0 1.6rem;
   text-align: left;
-  border: 1px solid #facc15;
+  border: 1px solid rgba(226, 232, 240, 0.9); /* same as other sections */
 }
+
 
 .owners-block h2 {
   margin-bottom: 0.5rem;
