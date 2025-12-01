@@ -776,11 +776,12 @@ input[type="submit"] {
 
 /* left column (first child) – cream panel */
 .why-grid > div:first-child {
-  background: #fff9e9;
+  background: #ffffff;         /* white box */
   border-radius: 1.2rem;
   padding: 2.1rem 2rem 2rem;
-  border: 1px solid #fce6a8;
+  border: 1px solid rgba(226, 232, 240, 0.9); /* same border style as services cards */
 }
+
 
 /* make the three why items sit more like a row of icons */
 .why-points {
@@ -834,6 +835,19 @@ input[type="submit"] {
   padding: 0.55rem 1.2rem;
   font-size: 0.9rem;
 }
+
+/* 🐝 Override: make the small button cream */
+.btn-small {
+  background: #fff9e9;  /* soft cream */
+  border: 2px solid #facc15; /* warm golden outline */
+  color: #111111;
+}
+
+.btn-small:hover {
+  background: #f6c657; /* subtle yellow tint on hover */
+  color: #111111;
+}
+
 
 /* Testimonial card (right side of Why Choose) */
 .testimonial-card {
