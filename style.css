@@ -896,13 +896,13 @@ input[type="submit"] {
 
 /* Owner Portal bubble */
 .owner-portal-bubble {
-  background: #fff9e9;          /* soft cream bubble */
-  border: 1px solid #fce6a8;    /* warm gold outline */
-  padding: 1.4rem 1.6rem;
-  border-radius: 1rem;
-  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
   margin-top: 1.4rem;
+  text-align: center;
 }
+
 
 .owners-btn {
   background: #111111;
