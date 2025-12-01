@@ -504,7 +504,7 @@ input[type="submit"] {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #1f2937;
+  background: #111111;
   color: #fbbf24;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
@@ -524,7 +524,7 @@ input[type="submit"] {
 /* Contact section heading tweak */
 
 .contact-section h2 {
-  color: #1f2937;
+   color: #111111;
 }
 
 /* FAQ ACCORDION -------------------------------------- */
@@ -605,7 +605,7 @@ input[type="submit"] {
 }
 
 .comparison-table thead {
-  background: #111827;
+  background: #111111;
   color: #f9fafb;
 }
 
@@ -793,7 +793,7 @@ input[type="submit"] {
 
 /* Testimonial card (right side of Why Choose) */
 .testimonial-card {
-  background: #111827;
+  background: #111111;
   color: #f9fafb;
   border-radius: 1.1rem;
   padding: 1.9rem 1.7rem;
@@ -836,12 +836,12 @@ input[type="submit"] {
 }
 
 .owners-btn {
-  background: #111827;
+  background: #111111;
   color: #f9fafb;
 }
 
 .owners-btn:hover {
-  background: #020617;
+  background: #000000;
   color: #f9fafb;
 }
 
