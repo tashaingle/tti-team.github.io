@@ -292,6 +292,25 @@ ul {
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on most screens */
   gap: 1.6rem;
 }
+/* TEAM GRID – 3 across on desktop */
+.team-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* Medium screens: 2 across */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small screens: stack them */
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* On small screens, stack them in one column */
 @media (max-width: 640px) {
