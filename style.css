@@ -845,24 +845,6 @@ input[type="submit"] {
   margin-bottom: 0.9rem;
 }
 
-/* For Property Owners block – cleaner styles */
-.owners-block {
-  background: #fefce8;
-  border-radius: 1.1rem;
-  padding: 1.8rem 1.6rem;
-  margin: 2.4rem 0 1.6rem;
-  text-align: left;
-  border: 1px solid #facc15;
-}
-
-.owners-block h2 {
-  margin-bottom: 0.5rem;
-}
-
-.owners-block p {
-  margin-bottom: 0.9rem;
-}
-
 /* Owner Portal bubble */
 .owner-portal-bubble {
   background: #fff9e9;          /* soft cream bubble */
@@ -883,16 +865,6 @@ input[type="submit"] {
   color: #f9fafb;
 }
 
-
-.owners-btn {
-  background: #111111;
-  color: #f9fafb;
-}
-
-.owners-btn:hover {
-  background: #000000;
-  color: #f9fafb;
-}
 
 /* RESPONSIVE (general) */
 
