@@ -37,10 +37,11 @@ body {
 header {
   text-align: center;
   padding: 2.8rem 1rem 1.7rem;
-  background: linear-gradient(135deg, #111111, #854d0e); /* black → rich gold-brown */
+  background: linear-gradient(135deg, #111111, #1f1f1f); /* subtle dark → dark */
   color: #fff;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
 }
+
 
 
 header h1 {
@@ -201,13 +202,13 @@ background:
     background:
       linear-gradient(
         to bottom,
-        rgba(17, 17, 17, 0.9) 0%,
-        rgba(17, 17, 17, 0.8) 40%,
-        rgba(17, 17, 17, 0.1) 80%
+        rgba(17, 17, 17, 0.85) 0%,
+        rgba(17, 17, 17, 0.6) 40%,
+        rgba(17, 17, 17, 0.0) 80%
       ),
       url("images/hero.jpg") center/cover no-repeat;
+    background-color: #111111; /* fallback */
   }
-}
 
   .hero-inner h2 {
     font-size: 2rem;
@@ -218,6 +219,7 @@ background:
     align-items: flex-start;
   }
 }
+
 
 /* BUTTONS */
 
@@ -261,7 +263,7 @@ background:
 /* HERO OUTLINE BUTTON — ALWAYS VISIBLE */
 .hero-upgraded .btn-outline {
   background: #ffffff;        /* solid white */
-  color: #1f2937 !important;  /* dark navy text */
+  color: #111111 !important;  /* charcoal text */
   border: 2px solid #ffffff;  /* clean white border */
 }
 
@@ -424,7 +426,7 @@ input[type="submit"] {
 /* CENTERED FOOTER ----------------------------------------------- */
 
 .site-footer {
-  background: #111827;
+  background: #111111;
   color: #e5e7eb;
   padding: 1.8rem 1rem 1.6rem;
   margin-top: 2rem;
