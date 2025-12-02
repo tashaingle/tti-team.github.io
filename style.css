@@ -1054,3 +1054,11 @@ input[type="submit"] {
   color: #000;
 }
 
+/* ABOUT PAGE TEXT COLOUR FIX */
+.about-page p,
+.about-page li,
+.about-page .card p,
+.about-page .card h3 {
+  color: #111111 !important; /* strong black */
+}
+
