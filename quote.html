@@ -4,44 +4,57 @@
   <meta charset="UTF-8">
   <title>Get a Quote | Nationwide B&amp;B Management in England – Bee &amp; Bee Property Management</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
   <meta name="description" content="Request a quote for nationwide B&amp;B management anywhere in England. Bee &amp; Bee Property Management offers cleaning, guest communication, booking support and full property management.">
-  <meta name="keywords" content="B&B quote England, holiday let quote UK, nationwide guest house management pricing">
+  <meta name="keywords" content="B&amp;B quote England, holiday let quote UK, nationwide guest house management pricing">
 </head>
-
-
 
 <body>
   <header>
-  <img src="images/logo.png" alt="Bee &amp; Bee Property Management logo" class="brand-logo">
+    <img src="images/logo.png" alt="Bee &amp; Bee Property Management logo" class="brand-logo">
     <h1>Get a Quote</h1>
-    <p>Tell us a bit about your property and we’ll be in touch</p>
+    <p>Tell us a bit about your property and we’ll be in touch with a no-obligation estimate.</p>
   </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="services.html">Our Services</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact Us</a>
-  <a href="quote.html" class="active">Get a Quote</a>
-  <a href="owner-portal.html">Owner Portal</a>
-</nav>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Our Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="quote.html" class="active">Get a Quote</a>
+    <a href="owner-portal.html">Owner Portal</a>
+  </nav>
 
   <main>
     <section class="fade-in">
       <h2>About Your Property</h2>
       <p>
-        Fill in the form below and we’ll use these details to put together a simple quote 
-        for managing your B&amp;B. We’ll get back to you by email as soon as we can.
+        Share a few details about your B&amp;B or short-stay property and we’ll use this information to put
+        together a simple quote based on our percentage pricing model.
+      </p>
+      <p>
+        There’s no obligation at this stage – it’s just a chance to see whether Bee &amp; Bee could be a good
+        fit for you and your property.
+      </p>
+      <p>
+        The more detail you can give, the more accurate we can be, but it’s absolutely fine if you’re still
+        early in your planning.
       </p>
     </section>
 
     <section class="fade-in fade-in-delay-1">
       <h2>Quote Request Form</h2>
+      <p>
+        We’ll usually reply by email, and if it’s helpful we may suggest a quick call to learn a bit more about
+        your setup and what you’re looking for.
+      </p>
+
       <form action="https://formsubmit.co/info@bee&amp;beepropertymanagement.co.uk" method="POST">
         <!-- FormSubmit options -->
         <input type="hidden" name="_subject" value="New quote request from Bee &amp; Bee Property Management website">
@@ -59,36 +72,46 @@
 
         <div>
           <label for="phone">Phone number (optional)</label><br>
-          <input type="text" id="phone" name="phone">
+          <input type="text" id="phone" name="phone" placeholder="If you’d prefer a call, pop your number here">
         </div>
 
         <div>
           <label for="location">Property location (town / area)</label><br>
-          <input type="text" id="location" name="property_location" required>
+          <input type="text" id="location" name="property_location" required placeholder="e.g. Bath, Northumberland coast, York">
         </div>
 
         <div>
           <label for="size">Property size</label><br>
-          <input type="text" id="size" name="property_size" placeholder="e.g. 3-bedroom house, 2 guest rooms">
+          <input type="text" id="size" name="property_size" placeholder="e.g. 3-bedroom house, 4 guest rooms, annexe, etc.">
         </div>
 
         <div>
           <label for="bookings">Rough number of guest stays per month (if known)</label><br>
-          <input type="text" id="bookings" name="estimated_bookings" placeholder="e.g. 4–8 stays per month">
+          <input type="text" id="bookings" name="estimated_bookings" placeholder="e.g. 4–8 stays per month, seasonal, not sure yet">
         </div>
 
         <div>
           <label>Services you’re interested in</label><br>
           <label><input type="checkbox" name="services[]" value="Full management"> Full B&amp;B management</label><br>
           <label><input type="checkbox" name="services[]" value="Cleaning and laundry"> Cleaning &amp; laundry</label><br>
-          <label><input type="checkbox" name="services[]" value="Maintenance"> Maintenance &amp; repairs</label><br>
+          <label><input type="checkbox" name="services[]" value="Maintenance"> Maintenance &amp; repairs coordination</label><br>
           <label><input type="checkbox" name="services[]" value="Guest communication"> Guest communication &amp; bookings</label><br>
+          <label><input type="checkbox" name="services[]" value="Not sure yet"> I’m not sure yet – I’d like some guidance</label><br>
+        </div>
+
+        <div>
+          <label for="timeline">When are you hoping to start?</label><br>
+          <input type="text" id="timeline" name="timeline" placeholder="e.g. Next month, in 3–6 months, just exploring options">
         </div>
 
         <div>
           <label for="message">Anything else we should know?</label><br>
-          <textarea id="message" name="message" placeholder="Tell us about your B&amp;B, how you currently manage it, and what support you’re looking for."></textarea>
+          <textarea id="message" name="message" placeholder="Tell us about your B&amp;B, how you currently manage it (or plan to), and what support you’re looking for."></textarea>
         </div>
+
+        <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
+          We’ll only use these details to respond to your enquiry and provide a quote. Your information won’t be shared with third parties.
+        </p>
 
         <input type="submit" value="Request Quote" class="btn btn-primary">
       </form>
@@ -97,92 +120,93 @@
     <section class="fade-in fade-in-delay-2">
       <h2>What Happens Next?</h2>
       <p>
-        Once we receive your quote request, we’ll review the details and get back to you by email. 
-        If we need more information, we may suggest a quick call to learn more about your property.
+        Once we receive your quote request, we’ll review the details and come back to you with an outline of
+        how we can help and what our management fee is likely to be for your property.
+      </p>
+      <p>
+        If we need more information to give you a fair estimate, we may suggest a brief call. There’s no pressure
+        to commit – it’s simply an opportunity to ask questions and see whether Bee &amp; Bee feels like the right fit.
+      </p>
+      <p>
+        In the meantime, you can also take a look at our <a href="services.html">Our Services</a> page to see
+        how our Essential, Standard and Full Management options compare.
       </p>
     </section>
   </main>
 
-<footer class="site-footer centered-footer">
-  <div class="footer-container-center">
+  <footer class="site-footer centered-footer">
+    <div class="footer-container-center">
 
-    <h3 class="footer-logo">Bee &amp; Bee Property Management</h3>
-    <p class="footer-tagline">Cleaning • Bookings • Maintenance for B&amp;Bs</p>
+      <h3 class="footer-logo">Bee &amp; Bee Property Management</h3>
+      <p class="footer-tagline">Cleaning • Bookings • Maintenance for B&amp;Bs</p>
 
-<ul class="footer-links-center">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="services.html">Our Services</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact Us</a></li>
-  <li><a href="quote.html">Get a Quote</a></li>
-  <a href="owner-portal.html">Owner Portal</a>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Use</a></li>
-  <li><a href="legal.html">Legal Information</a></li>
-  <li><a href="accessibility.html">Accessibility</a></li>
-  <li><a href="complaints.html">Complaints Policy</a></li>
-</ul>
+      <ul class="footer-links-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="owner-portal.html">Owner Portal</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="legal.html">Legal Information</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="complaints.html">Complaints Policy</a></li>
+      </ul>
 
+      <ul class="footer-contact-center">
+        <li><a href="tel:07850177876">📞 07850 177 876</a></li>
+        <li><a href="mailto:info@bee&amp;beepropertymanagement.co.uk">✉️ info@bee&amp;beepropertymanagement.co.uk</a></li>
+        <li><a href="https://wa.me/447850177876" target="_blank">💬 WhatsApp</a></li>
+      </ul>
 
+      <ul class="footer-social">
+        <!-- Facebook -->
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61584545910182"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Facebook">
+            <svg viewBox="0 0 24 24" class="social-icon">
+              <path fill="currentColor" d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12a10 10 0 0 0 8.44 9.87v-6.99H8v-2.88h2.44V9.41c0-2.41 1.43-3.75 3.62-3.75 1.05 0 2.15.19 2.15.19v2.36h-1.21c-1.2 0-1.57.75-1.57 1.52v1.82H16.7l-.39 2.88h-2.27V21.9A10 10 0 0 0 22 12Z"/>
+            </svg>
+          </a>
+        </li>
 
-    <ul class="footer-contact-center">
-      <li><a href="tel:07850177876">📞 07850 177 876</a></li>
-      <li><a href="mailto:info@bee&amp;beepropertymanagement.co.uk">✉️ info@bee&amp;beepropertymanagement.co.uk</a></li>
-      <li><a href="https://wa.me/447850177876" target="_blank">💬 WhatsApp</a></li>
-    </ul>
-<ul class="footer-social">
-<!-- Facebook -->
-<li>
-  <a href="https://www.facebook.com/profile.php?id=61584545910182"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Facebook">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12a10 10 0 0 0 8.44 9.87v-6.99H8v-2.88h2.44V9.41c0-2.41 1.43-3.75 3.62-3.75 1.05 0 2.15.19 2.15.19v2.36h-1.21c-1.2 0-1.57.75-1.57 1.52v1.82H16.7l-.39 2.88h-2.27V21.9A10 10 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-</li>
+        <!-- Instagram -->
+        <li>
+          <a href="https://www.instagram.com/beeandbeepropertymanagement/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram">
+            <svg viewBox="0 0 24 24" class="social-icon">
+              <path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm4.9-8.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/>
+            </svg>
+          </a>
+        </li>
 
+        <!-- TikTok -->
+        <li>
+          <a href="https://www.tiktok.com/@beebeepropertymanagement"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="TikTok">
+            <svg viewBox="0 0 24 24" class="social-icon">
+              <path fill="currentColor" d="M20 8.16a4.85 4.85 0 0 1-2.77-.92 5.31 5.31 0 0 1-1.89-2.62v-.03H13v10.32a2.42 2.42 0 1 1-1.72-2.32V10a5.24 5.24 0 1 0 5.24 5.24v-5.9a8.22 8.22 0 0 0 4 1.16V8.16z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-<!-- Instagram -->
-<li>
-  <a href="https://www.instagram.com/beeandbeepropertymanagement/"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Instagram">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm4.9-8.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/>
-    </svg>
-  </a>
-</li>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Bee &amp; Bee Property Management. All rights reserved.
+      </p>
 
-
-<!-- TikTok -->
-<li>
-  <a href="https://www.tiktok.com/@beebeepropertymanagement"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="TikTok">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M20 8.16a4.85 4.85 0 0 1-2.77-.92 5.31 5.31 0 0 1-1.89-2.62v-.03H13v10.32a2.42 2.42 0 1 1-1.72-2.32V10a5.24 5.24 0 1 0 5.24 5.24v-5.9a8.22 8.22 0 0 0 4 1.16V8.16z"/>
-    </svg>
-  </a>
-</li>
-
-
-
-    <p class="footer-copy">
-      &copy; <span id="year"></span> Bee &amp; Bee Property Management. All rights reserved.
-    </p>
-
-  </div>
-</footer>
-
-
+    </div>
+  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
