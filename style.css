@@ -1062,3 +1062,8 @@ input[type="submit"] {
   color: #111111 !important; /* strong black */
 }
 
+/* Make lists on the Owner Portal page use standard text colour */
+.owner-portal-page ul {
+  color: var(--color-text);
+}
+
