@@ -2,87 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Bee &amp; Bee Property Management | Nationwide B&amp;B Management Across England</title>
+  <title>Contact Us | Bee &amp; Bee Property Management</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Contact Bee &amp; Bee Property Management about nationwide B&amp;B and short-stay property management, cleaning, guest bookings and maintenance across England.">
-  <meta name="keywords" content="contact B&B manager England, nationwide property management England, holiday let support UK">
+
+  <meta name="description" content="Contact Bee &amp; Bee Property Management to discuss B&amp;B and short-stay property management anywhere in England. Friendly, no-obligation enquiries welcome.">
+  <meta name="keywords" content="contact B&amp;B management, Bee and Bee contact, holiday let management enquiry England">
 </head>
-
-
 
 <body>
 <header>
   <img src="images/logo.png" alt="Bee &amp; Bee Property Management logo" class="brand-logo">
-    <h1>Contact Us</h1>
-    <p>We’d love to hear from you</p>
+  <h1>Contact Us</h1>
+  <p>Friendly, no-obligation enquiries – we’re happy to talk things through.</p>
 </header>
-
 
 <nav>
   <a href="index.html">Home</a>
   <a href="services.html">Our Services</a>
-<a href="about.html">About</a>
+  <a href="about.html">About</a>
   <a href="contact.html" class="active">Contact Us</a>
   <a href="quote.html">Get a Quote</a>
   <a href="owner-portal.html">Owner Portal</a>
 </nav>
 
+<main>
 
-  <main>
+  <section class="fade-in contact-section">
+    <h2>How to Get in Touch</h2>
+    <p>
+      Whether you already run a B&amp;B or you’re just exploring the idea of short-stay hosting,
+      we’re happy to answer questions and talk through what support might be helpful.
+    </p>
+    <p>
+      You can use the contact form below, or reach us directly by phone, email or WhatsApp if you prefer.
+    </p>
 
-    <section class="fade-in">
-      <h2>Get in Touch</h2>
-      <p>You can email or call us directly, or use the enquiry form below.</p>
-      <p>Email: <a href="mailto:info@bee&amp;beepropertymanagement.co.uk">info@bee&amp;beepropertymanagement.co.uk</a></p>
-      <p>Phone: <a href="tel:07850177876">07850 177 876</a></p>
-    </section>
+    <ul>
+      <li><strong>Phone:</strong> <a href="tel:07850177876">07850 177 876</a></li>
+      <li><strong>Email:</strong> <a href="mailto:info@bee&amp;beepropertymanagement.co.uk">info@bee&amp;beepropertymanagement.co.uk</a></li>
+      <li><strong>WhatsApp:</strong> <a href="https://wa.me/447850177876" target="_blank">Message us on WhatsApp</a></li>
+    </ul>
 
-    <section class="fade-in fade-in-delay-1">
-      <h2>Enquiry Form</h2>
-      <p>This form can email your enquiry to us. Replace the email in the code with your real address when you’re ready.</p>
+    <p>
+      We aim to reply to all messages within one working day.
+    </p>
+  </section>
 
-      <form action="https://formsubmit.co/info@bee&amp;beepropertymanagement.co.uk" method="POST">
-        <!-- FormSubmit options -->
-        <input type="hidden" name="_subject" value="New enquiry from Bee &amp; Bee Property Management website">
-        <input type="hidden" name="_captcha" value="false">
+  <section class="fade-in fade-in-delay-1">
+    <h2>Send Us a Message</h2>
+    <p>
+      Not sure exactly what you need yet? That’s completely fine. Just tell us a bit about your property
+      (or plans) and we’ll take it from there.
+    </p>
 
-        <div>
-          <label for="name">Your name</label><br>
-          <input type="text" id="name" name="name" required>
-        </div>
+    <form action="https://formsubmit.co/info@bee&amp;beepropertymanagement.co.uk" method="POST">
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_subject" value="New contact message from Bee &amp; Bee Property Management website">
+      <input type="hidden" name="_captcha" value="false">
 
-        <div>
-          <label for="email">Your email</label><br>
-          <input type="email" id="email" name="email" required>
-        </div>
+      <div>
+        <label for="name">Your name</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-        <div>
-          <label for="property">Property location (town / area)</label><br>
-          <input type="text" id="property" name="property">
-        </div>
+      <div>
+        <label for="email">Your email</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-        <div>
-          <label for="message">How can we help?</label><br>
-          <textarea id="message" name="message" required></textarea>
-        </div>
+      <div>
+        <label for="phone">Phone number (optional)</label><br>
+        <input type="text" id="phone" name="phone" placeholder="If you’d like us to call you back">
+      </div>
 
-        <input type="submit" value="Send Enquiry" class="btn btn-primary">
-      </form>
-    </section>
+      <div>
+        <label for="property">Tell us about your property (or plans)</label><br>
+        <textarea id="property" name="property_details" placeholder="e.g. 3-room B&amp;B in the Lakes, starting next season; currently managing cleaning myself but would like help with bookings and turnovers." required></textarea>
+      </div>
 
-    <section class="fade-in fade-in-delay-2">
-      <h2>Service Area</h2>
-      <p>
-        We currently focus on local B&amp;B and short-stay properties in England. 
-        If you’re not sure whether we can cover your property, please get in touch and ask.
+      <div>
+        <label for="help">How do you think we might be able to help?</label><br>
+        <textarea id="help" name="how_we_can_help" placeholder="e.g. Full management, just cleaning, advice on setting things up, not sure yet, etc."></textarea>
+      </div>
+
+      <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
+        We’ll only use your details to respond to your enquiry. For more information, please see our
+        <a href="privacy.html">Privacy Policy</a>.
       </p>
-    </section>
 
-  </main>
+      <input type="submit" value="Send Message" class="btn btn-primary">
+    </form>
+  </section>
+
+  <section class="fade-in fade-in-delay-2">
+    <h2>Not Ready to Reach Out Yet?</h2>
+    <p>
+      If you’re just browsing for now, you can learn more about how we work on our
+      <a href="services.html">Our Services</a> page or read a bit more about us on the
+      <a href="about.html">About</a> page.
+    </p>
+  </section>
+
+</main>
 
 <footer class="site-footer centered-footer">
   <div class="footer-container-center">
@@ -90,68 +117,63 @@
     <h3 class="footer-logo">Bee &amp; Bee Property Management</h3>
     <p class="footer-tagline">Cleaning • Bookings • Maintenance for B&amp;Bs</p>
 
-<ul class="footer-links-center">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="services.html">Our Services</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="contact.html">Contact Us</a></li>
-  <li><a href="quote.html">Get a Quote</a></li>
-  <a href="owner-portal.html">Owner Portal</a>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Use</a></li>
-  <li><a href="legal.html">Legal Information</a></li>
-  <li><a href="accessibility.html">Accessibility</a></li>
-  <li><a href="complaints.html">Complaints Policy</a></li>
-</ul>
-
-
+    <ul class="footer-links-center">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Our Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="quote.html">Get a Quote</a></li>
+      <li><a href="owner-portal.html">Owner Portal</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="legal.html">Legal Information</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+      <li><a href="complaints.html">Complaints Policy</a></li>
+    </ul>
 
     <ul class="footer-contact-center">
       <li><a href="tel:07850177876">📞 07850 177 876</a></li>
       <li><a href="mailto:info@bee&amp;beepropertymanagement.co.uk">✉️ info@bee&amp;beepropertymanagement.co.uk</a></li>
       <li><a href="https://wa.me/447850177876" target="_blank">💬 WhatsApp</a></li>
     </ul>
-<ul class="footer-social">
 
- <!-- Facebook -->
-<li>
-  <a href="https://www.facebook.com/profile.php?id=61584545910182"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Facebook">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12a10 10 0 0 0 8.44 9.87v-6.99H8v-2.88h2.44V9.41c0-2.41 1.43-3.75 3.62-3.75 1.05 0 2.15.19 2.15.19v2.36h-1.21c-1.2 0-1.57.75-1.57 1.52v1.82H16.7l-.39 2.88h-2.27V21.9A10 10 0 0 0 22 12Z"/>
-    </svg>
-  </a>
-</li>
+    <ul class="footer-social">
+      <!-- Facebook -->
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61584545910182"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+          <svg viewBox="0 0 24 24" class="social-icon">
+            <path fill="currentColor" d="M22 12C22 6.48 17.52 2 12 2S2 6.48 2 12a10 10 0 0 0 8.44 9.87v-6.99H8v-2.88h2.44V9.41c0-2.41 1.43-3.75 3.62-3.75 1.05 0 2.15.19 2.15.19v2.36h-1.21c-1.2 0-1.57.75-1.57 1.52v1.82H16.7l-.39 2.88h-2.27V21.9A10 10 0 0 0 22 12Z"/>
+          </svg>
+        </a>
+      </li>
 
+      <!-- Instagram -->
+      <li>
+        <a href="https://www.instagram.com/beeandbeepropertymanagement/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+          <svg viewBox="0 0 24 24" class="social-icon">
+            <path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm4.9-8.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/>
+          </svg>
+        </a>
+      </li>
 
-<!-- Instagram -->
-<li>
-  <a href="https://www.instagram.com/beeandbeepropertymanagement/"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Instagram">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.3A4.7 4.7 0 1 0 16.7 12 4.7 4.7 0 0 0 12 7.3zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3zm4.9-8.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/>
-    </svg>
-  </a>
-</li>
-
-
-<!-- TikTok -->
-<li>
-  <a href="https://www.tiktok.com/@beebeepropertymanagement"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="TikTok">
-    <svg viewBox="0 0 24 24" class="social-icon">
-      <path fill="currentColor" d="M20 8.16a4.85 4.85 0 0 1-2.77-.92 5.31 5.31 0 0 1-1.89-2.62v-.03H13v10.32a2.42 2.42 0 1 1-1.72-2.32V10a5.24 5.24 0 1 0 5.24 5.24v-5.9a8.22 8.22 0 0 0 4 1.16V8.16z"/>
-    </svg>
-  </a>
-</li>
-
-
+      <!-- TikTok -->
+      <li>
+        <a href="https://www.tiktok.com/@beebeepropertymanagement"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="TikTok">
+          <svg viewBox="0 0 24 24" class="social-icon">
+            <path fill="currentColor" d="M20 8.16a4.85 4.85 0 0 1-2.77-.92 5.31 5.31 0 0 1-1.89-2.62v-.03H13v10.32a2.42 2.42 0 1 1-1.72-2.32V10a5.24 5.24 0 1 0 5.24 5.24v-5.9a8.22 8.22 0 0 0 4 1.16V8.16z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
 
     <p class="footer-copy">
       &copy; <span id="year"></span> Bee &amp; Bee Property Management. All rights reserved.
@@ -160,10 +182,8 @@
   </div>
 </footer>
 
-
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
