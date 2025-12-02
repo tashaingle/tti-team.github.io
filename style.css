@@ -1039,4 +1039,18 @@ input[type="submit"] {
   font-size: 0.9rem;
 }
 
+/* Make Services page text black inside the main content area */
+.services-page main {
+  color: #000;
+}
+
+/* Override softer grey text just on the Services page */
+.services-page main p,
+.services-page main li,
+.services-page main ul,
+.services-page .comparison-note,
+.services-page .detailed-card p,
+.services-page .comparison-table td em {
+  color: #000;
+}
 
