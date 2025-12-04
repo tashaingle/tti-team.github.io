@@ -61,43 +61,57 @@
       (or plans) and we’ll take it from there.
     </p>
 
-    <form action="https://formsubmit.co/info@beeandbeeproperties.com" method="POST">
-      <!-- FormSubmit options -->
-      <input type="hidden" name="_subject" value="New contact message from Bee &amp; Bee Property Management website">
-      <input type="hidden" name="_captcha" value="false">
+    <form action="https://formspree.io/f/abcdwxyz" method="POST">
+  <!-- change to your real Formspree endpoint ↑ -->
 
-      <div>
-        <label for="name">Your name</label><br>
-        <input type="text" id="name" name="name" required>
-      </div>
+  <!-- Email subject -->
+  <input type="hidden" name="_subject"
+         value="New contact message from Bee &amp; Bee Property Management website">
 
-      <div>
-        <label for="email">Your email</label><br>
-        <input type="email" id="email" name="email" required>
-      </div>
+  <!-- Optional: redirect to a thank-you page on your site -->
+  <!--
+  <input type="hidden" name="_next"
+         value="https://beeandbeeproperties.com/thank-you.html">
+  -->
 
-      <div>
-        <label for="phone">Phone number (optional)</label><br>
-        <input type="text" id="phone" name="phone" placeholder="If you’d like us to call you back">
-      </div>
+  <div>
+    <label for="name">Your name</label><br>
+    <input type="text" id="name" name="name" required>
+  </div>
 
-      <div>
-        <label for="property">Tell us about your property (or plans)</label><br>
-        <textarea id="property" name="property_details" placeholder="e.g. 3-room B&amp;B in the Lakes, starting next season; currently managing cleaning myself but would like help with bookings and turnovers." required></textarea>
-      </div>
+  <div>
+    <label for="email">Your email</label><br>
+    <!-- use _replyto so reply goes to the visitor -->
+    <input type="email" id="email" name="_replyto" required>
+  </div>
 
-      <div>
-        <label for="help">How do you think we might be able to help?</label><br>
-        <textarea id="help" name="how_we_can_help" placeholder="e.g. Full management, just cleaning, advice on setting things up, not sure yet, etc."></textarea>
-      </div>
+  <div>
+    <label for="phone">Phone number (optional)</label><br>
+    <input type="text" id="phone" name="phone"
+           placeholder="If you’d like us to call you back">
+  </div>
 
-      <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
-        We’ll only use your details to respond to your enquiry. For more information, please see our
-        <a href="privacy.html">Privacy Policy</a>.
-      </p>
+  <div>
+    <label for="property">Tell us about your property (or plans)</label><br>
+    <textarea id="property" name="property_details"
+              placeholder="e.g. 3-room B&amp;B in the Lakes, starting next season; currently managing cleaning myself but would like help with bookings and turnovers."
+              required></textarea>
+  </div>
 
-      <input type="submit" value="Send Message" class="btn btn-primary">
-    </form>
+  <div>
+    <label for="help">How do you think we might be able to help?</label><br>
+    <textarea id="help" name="how_we_can_help"
+              placeholder="e.g. Full management, just cleaning, advice on setting things up, not sure yet, etc."></textarea>
+  </div>
+
+  <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
+    We’ll only use your details to respond to your enquiry. For more information, please see our
+    <a href="privacy.html">Privacy Policy</a>.
+  </p>
+
+  <input type="submit" value="Send Message" class="btn btn-primary">
+</form>
+
   </section>
 
   <section class="fade-in fade-in-delay-2">
