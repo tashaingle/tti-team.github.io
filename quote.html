@@ -55,66 +55,79 @@
         your setup and what you’re looking for.
       </p>
 
-      <form action="https://formsubmit.co/info@beeandbeeproperties.com" method="POST">
-        <!-- FormSubmit options -->
-        <input type="hidden" name="_subject" value="New quote request from Bee &amp; Bee Property Management website">
-        <input type="hidden" name="_captcha" value="false">
+      <form action="https://formspree.io/f/xanrbygb" method="POST">
+  <!-- Email subject -->
+  <input type="hidden" name="_subject"
+         value="New quote request from Bee &amp; Bee Property Management website">
 
-        <div>
-          <label for="name">Your name</label><br>
-          <input type="text" id="name" name="name" required>
-        </div>
+  <!-- Optional: redirect to a thank-you page on your site later -->
+  <!--
+  <input type="hidden" name="_next"
+         value="https://beeandbeeproperties.com/thank-you.html">
+  -->
 
-        <div>
-          <label for="email">Your email</label><br>
-          <input type="email" id="email" name="email" required>
-        </div>
+  <div>
+    <label for="name">Your name</label><br>
+    <input type="text" id="name" name="name" required>
+  </div>
 
-        <div>
-          <label for="phone">Phone number (optional)</label><br>
-          <input type="text" id="phone" name="phone" placeholder="If you’d prefer a call, pop your number here">
-        </div>
+  <div>
+    <label for="email">Your email</label><br>
+    <!-- use _replyto so reply goes to the visitor -->
+    <input type="email" id="email" name="_replyto" required>
+  </div>
 
-        <div>
-          <label for="location">Property location (town / area)</label><br>
-          <input type="text" id="location" name="property_location" required placeholder="e.g. Bath, Northumberland coast, York">
-        </div>
+  <div>
+    <label for="phone">Phone number (optional)</label><br>
+    <input type="text" id="phone" name="phone"
+           placeholder="If you’d prefer a call, pop your number here">
+  </div>
 
-        <div>
-          <label for="size">Property size</label><br>
-          <input type="text" id="size" name="property_size" placeholder="e.g. 3-bedroom house, 4 guest rooms, annexe, etc.">
-        </div>
+  <div>
+    <label for="location">Property location (town / area)</label><br>
+    <input type="text" id="location" name="property_location" required
+           placeholder="e.g. Bath, Northumberland coast, York">
+  </div>
 
-        <div>
-          <label for="bookings">Rough number of guest stays per month (if known)</label><br>
-          <input type="text" id="bookings" name="estimated_bookings" placeholder="e.g. 4–8 stays per month, seasonal, not sure yet">
-        </div>
+  <div>
+    <label for="size">Property size</label><br>
+    <input type="text" id="size" name="property_size"
+           placeholder="e.g. 3-bedroom house, 4 guest rooms, annexe, etc.">
+  </div>
 
-        <div>
-          <label>Services you’re interested in</label><br>
-          <label><input type="checkbox" name="services[]" value="Full management"> Full B&amp;B management</label><br>
-          <label><input type="checkbox" name="services[]" value="Cleaning and laundry"> Cleaning &amp; laundry</label><br>
-          <label><input type="checkbox" name="services[]" value="Maintenance"> Maintenance &amp; repairs coordination</label><br>
-          <label><input type="checkbox" name="services[]" value="Guest communication"> Guest communication &amp; bookings</label><br>
-          <label><input type="checkbox" name="services[]" value="Not sure yet"> I’m not sure yet – I’d like some guidance</label><br>
-        </div>
+  <div>
+    <label for="bookings">Rough number of guest stays per month (if known)</label><br>
+    <input type="text" id="bookings" name="estimated_bookings"
+           placeholder="e.g. 4–8 stays per month, seasonal, not sure yet">
+  </div>
 
-        <div>
-          <label for="timeline">When are you hoping to start?</label><br>
-          <input type="text" id="timeline" name="timeline" placeholder="e.g. Next month, in 3–6 months, just exploring options">
-        </div>
+  <div>
+    <label>Services you’re interested in</label><br>
+    <label><input type="checkbox" name="services[]" value="Full B&amp;B management"> Full B&amp;B management</label><br>
+    <label><input type="checkbox" name="services[]" value="Cleaning and laundry"> Cleaning &amp; laundry</label><br>
+    <label><input type="checkbox" name="services[]" value="Maintenance &amp; repairs coordination"> Maintenance &amp; repairs coordination</label><br>
+    <label><input type="checkbox" name="services[]" value="Guest communication &amp; bookings"> Guest communication &amp; bookings</label><br>
+    <label><input type="checkbox" name="services[]" value="Not sure yet – I’d like some guidance"> I’m not sure yet – I’d like some guidance</label><br>
+  </div>
 
-        <div>
-          <label for="message">Anything else we should know?</label><br>
-          <textarea id="message" name="message" placeholder="Tell us about your B&amp;B, how you currently manage it (or plan to), and what support you’re looking for."></textarea>
-        </div>
+  <div>
+    <label for="timeline">When are you hoping to start?</label><br>
+    <input type="text" id="timeline" name="timeline"
+           placeholder="e.g. Next month, in 3–6 months, just exploring options">
+  </div>
 
-        <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
-          We’ll only use these details to respond to your enquiry and provide a quote. Your information won’t be shared with third parties.
-        </p>
+  <div>
+    <label for="message">Anything else we should know?</label><br>
+    <textarea id="message" name="message"
+              placeholder="Tell us about your B&amp;B, how you currently manage it (or plan to), and what support you’re looking for."></textarea>
+  </div>
 
-        <input type="submit" value="Request Quote" class="btn btn-primary">
-      </form>
+  <p style="font-size:0.9rem; margin-top:0.3rem; margin-bottom:0.9rem;">
+    We’ll only use these details to respond to your enquiry and provide a quote. Your information won’t be shared with third parties.
+  </p>
+
+  <input type="submit" value="Request Quote" class="btn btn-primary">
+</form>
     </section>
 
     <section class="fade-in fade-in-delay-2">
